@@ -1,0 +1,80 @@
+.subscribe {
+  // .subscribe__body
+  &__body {
+    max-width: 536px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10% 0;
+  }
+
+  // .subscribe__logo
+  &__logo {
+    margin: 0 0 39px 0;
+  }
+
+  // .subscribe__label
+  &__label {
+    margin: 0 0 35px 0;
+    font-size: 24px;
+    font-style: italic;
+    color: #848789;
+  }
+
+  // .subscribe__form
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .subscribe__input
+  &__input {
+    flex: 1 1 auto;
+    padding: 0 8px 0 0;
+    .input {
+      width: 100%;
+      height: 69px;
+      background-color: #ffffff;
+      border: 1px solid #d3d7d9;
+      padding: 28px;
+      font-size: 20px;
+      font-weight: 400;
+      font-style: italic;
+      color: #929292;
+      &:focus {
+        color: #333;
+      }
+    }
+  }
+
+  // .subscribe__button
+  &__button {
+    flex: 0 0 126px;
+  }
+
+  // .subscribe__btn
+  &__btn {
+    width: 100%;
+    height: 69px;
+    line-height: 69px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #64c29e;
+    transition: background-color 0.2s ease-in-out 0s;
+    &:hover {
+      background-color: #3baa7f;
+      font-weight: 400;
+    }
+  }
+
+  @media (max-width: $phones) {
+    &__form {
+      display: block;
+    }
+    &__input {
+      padding: 0 0 8px 0;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+$containerWidth: 1100px;
+$baseFontSize: 14px;
+
+// breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+// normalize and reset settings
+@import "layout/normalize.scss";
+@import "layout/reset_style.scss";
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+// media for adaptive
+@import "layout/media.scss";
+
+// Layout elements
+body {
+   font-family: "Lato", sans-serif;
+   @media (max-width: $tablets) {
+      &.lock {
+         overflow: hidden;
+      }
+   }
+}
+.wrapper {
+   overflow: hidden;
+   min-height: 100%;
+}
+.container {
+   max-width: 1130px;
+   padding: 0 9%;
+   margin: 0 auto;
+   @media (max-width: $phones) {
+      padding: 0 5%;
+   }
+}
+
+// Подключение файлов стилей страниц и элементов
+
+@import "layout/ibg.scss";
+@import "blocks/header.scss";
+@import "blocks/generation.scss";
+@import "blocks/text-block.scss";
+@import "blocks/brands.scss";
+@import "blocks/item.scss";
+@import "blocks/slider.scss";
+@import "blocks/shop.scss";
+@import "blocks/subscribe.scss";
+@import "blocks/footer.scss";
+
+// main content
+.page {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+}
+.main-screen {
+   flex: 1 0 100%;
+   position: relative;
+   &__bg {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+   }
+}
+
+.content {
+}
