@@ -19,6 +19,9 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.2s ease-in-out 0s;
+    img {
+      max-width: 150px;
+    }
     span {
       font-size: 14px;
       line-height: 1.2;

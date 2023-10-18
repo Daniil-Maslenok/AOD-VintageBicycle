@@ -1,13 +1,12 @@
 .slider {
   background-color: #f7f7f7;
-  padding: 7% 0 7% 0;
+  padding: 9% 0 5% 0;
   // .slider__body
 
   &__body {
   }
 
   // .slider__item
-
   &__item {
     text-align: center;
     font-size: 18px;
@@ -19,9 +18,8 @@
   }
 
   // .slider__icon
-
   &__icon {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     max-width: 32px;
     img {
       height: 100%;
@@ -30,9 +28,8 @@
   }
 
   // .slider__title
-
   &__title {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     line-height: 1.2;
     font-weight: 700;
     color: #353738;
@@ -43,7 +40,6 @@
   }
 
   // .slider__text
-
   &__text {
     font-size: 24px;
     line-height: 34px;
@@ -55,9 +51,90 @@
     &__item {
       font-size: 16px;
     }
+    &__icon {
+      margin-bottom: 25px;
+    }
     &__text {
       font-size: 18px;
       line-height: 30px;
     }
   }
+}
+// =================================================================================================
+
+// Настройка стилизации slick-слайдера
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9% 0 0 0;
+}
+.slick-dots li {
+  margin: 0 5px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid #a9afb3;
+  border-radius: 50%;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+  background-color: #a9afb3;
 }

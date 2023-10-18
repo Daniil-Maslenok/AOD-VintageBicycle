@@ -44,6 +44,7 @@
     &__row {
       flex-direction: column;
       text-align: center;
+      justify-content: flex-end;
     }
     &__socials {
       margin: 15px 0;
@@ -70,15 +71,34 @@
   // .socials__link
   &__link {
     display: block;
+    border-radius: 50%;
   }
 
   // .socials__icon
   &__icon {
     width: 100%;
+    transition: all 0.2s ease-in;
+    border-radius: 50%;
+    overflow: visible;
+    &:hover {
+      width: 110%;
+    }
+    &:active {
+      width: 95%;
+    }
   }
   @media (max-width: 600px) {
     &__item {
       max-width: 45px;
+    }
+    &__icon {
+      width: 100%;
+      &:hover {
+        width: 90%;
+      }
+      &:active {
+        width: 80%;
+      }
     }
   }
 }

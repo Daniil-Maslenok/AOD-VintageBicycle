@@ -67,6 +67,9 @@
       background-color: #3baa7f;
       font-weight: 400;
     }
+    &:active {
+      border: 1px solid #f7f7f7;
+    }
   }
 
   @media (max-width: $phones) {
